@@ -14,13 +14,14 @@ public class bt4 {
         Scanner sc =new Scanner(System.in);
         System.out.println("Nhập vào chức năng cần sử dụng: ");
         int Choice = sc.nextInt();
+        String [] lst1 = new String[sv];
+        String [] lst2 = new String[mh];
         switch (Choice) {
             /* Tên sv */
             case 1:
                 System.out.println("Chào mừng đến với nhập danh sách sinh viên và môn học");
                 System.out.println("Nhập vào số lượng sinh viên: ");
                 int sv = sc.nextInt();
-                String [] lst1 = new String[sv];
                 for (int i=0;i<lst1.length;i++)
                 {
                     System.out.println(" Nhập tên của sinh viên "+ (i+1));
@@ -30,7 +31,6 @@ public class bt4 {
                 /*Môn học */
                 System.out.println("Nhập vào số lượng môn học: ");
                 int mh = sc.nextInt();
-                String [] lst2 = new String[mh];
                 for (int x=0;x<lst2.length;x++)
                 {
                     System.out.println(" Nhập tên của môn học "+ (x+1));
